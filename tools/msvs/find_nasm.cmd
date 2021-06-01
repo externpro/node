@@ -21,4 +21,10 @@ if EXIST "%LOCALAPPDATA%\bin\NASM\nasm.exe" (
   EXIT /B 0
 )
 
+IF EXIST "%~dp0..\..\..\nasm\nasm.exe" (
+  ECHO externpro %~dp0..\..\..\nasm
+  SET "Path=%Path%;%~dp0..\..\..\nasm"
+  EXIT /B 0
+)
+
 EXIT /B 1
