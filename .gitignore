@@ -9,6 +9,7 @@
 !deps/**/.*
 !test/fixtures/**/.*
 !.clang-format
+!.devcontainer
 !.editorconfig
 !.eslintignore
 !.eslintrc.js
@@ -147,6 +148,11 @@ CTestTestfile.cmake
 cmake_install.cmake
 install_manifest.txt
 *.cbp
+
+# === Rules for externpro ===
+.env
+_bld*/
+docker-compose.override.yml
 
 # === Global Rules ===
 # Keep last to avoid being excluded
